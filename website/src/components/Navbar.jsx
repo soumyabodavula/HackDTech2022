@@ -52,7 +52,7 @@ function Navbar() {
                 </li>
             </ul>
             {button && <Button className = 'btns' 
-                            buttonStyle = 'btn--outline' buttonSize = 'btn--medium'>DONATE TODAY</Button>}
+                            buttonStyle = 'btn--outline' buttonSize = 'btn--medium' link = 'https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1006442&ms=4NALz2100K1N1A&gclid=Cj0KCQjwntCVBhDdARIsAMEwAClcPtU6PoA-5uovdBodL0hQYHqXwfUM35UEHiu7wuQgd-yc-7QkYeUaAilKEALw_wcB&gclsrc=aw.ds/'>DONATE TODAY</Button>}
         </div>
     </nav>
     </>
