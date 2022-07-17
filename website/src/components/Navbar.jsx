@@ -29,7 +29,7 @@ function Navbar() {
     <nav className="navbar">
         <div className="navbar-container">
             <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
-                TRVL <i className="fa-solid fa-venus"></i>
+                <i className="fa-solid fa-venus fa-flip slow-flip"></i>
             </Link>
             <div className = 'menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -51,14 +51,18 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className = 'nav-item'>
-                    <Link to='/donate' className = 'nav-links-mobile' onClick={closeMobileMenu}>
+                <a target="_blank" rel='noreferrer' className = 'nav-links-mobile' onClick={closeMobileMenu}
+                    href = "https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1006442&ms=4NALz2100K1N1A&gclid=Cj0KCQjwntCVBhDdARIsAMEwAClcPtU6PoA-5uovdBodL0hQYHqXwfUM35UEHiu7wuQgd-yc-7QkYeUaAilKEALw_wcB&gclsrc=aw.ds"
+                    >
+                    DONATE TODAY
+                </a>
+                {/* <Link to={{ pathname: "https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1006442&ms=4NALz2100K1N1A&gclid=Cj0KCQjwntCVBhDdARIsAMEwAClcPtU6PoA-5uovdBodL0hQYHqXwfUM35UEHiu7wuQgd-yc-7QkYeUaAilKEALw_wcB&gclsrc=aw.ds" }} target="_blank" rel='noreferrer' className = 'nav-links-mobile' onClick={closeMobileMenu}>
                         DONATE TODAY
-                    </Link>
+                    </Link> */}
                 </li>
             </ul>
-            <a href='https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1006442&ms=4NALz2100K1N1A&gclid=Cj0KCQjwntCVBhDdARIsAMEwAClcPtU6PoA-5uovdBodL0hQYHqXwfUM35UEHiu7wuQgd-yc-7QkYeUaAilKEALw_wcB&gclsrc=aw.ds' target='_blank' rel='noreferrer'>
-            {button && <Button buttonStyle = 'btn--outline'>DONATE TODAY</Button>}
-            </a>
+            {button && <Button path = "https://www.weareplannedparenthoodaction.org/onlineactions/6iOI0_HnUUmPu_6_SRgayg2?sourceid=1006442&ms=4NALz2100K1N1A&gclid=Cj0KCQjwntCVBhDdARIsAMEwAClcPtU6PoA-5uovdBodL0hQYHqXwfUM35UEHiu7wuQgd-yc-7QkYeUaAilKEALw_wcB&gclsrc=aw.ds" 
+                            buttonStyle = 'btn--outline'>DONATE TODAY</Button>}
         </div>
     </nav>
     </>
