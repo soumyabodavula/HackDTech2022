@@ -5,8 +5,7 @@ import './Cards.css';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
-      
+      <h1 className = 'header-header'>Find an abortion clinic near you</h1>
       <div className="cards__container">
           <div className="cards__wrapper">
           <h2 className='header-locs'>Raleigh-Durham</h2>
